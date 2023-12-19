@@ -52,6 +52,7 @@ ul li {
 }
 
 .new-item {
+  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -60,7 +61,7 @@ ul li {
   flex-direction: column;
   max-width: 450px;
   margin: auto auto;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 input {
@@ -83,4 +84,39 @@ input {
   cursor: pointer;
   background-color: black;
   color: white;
+}
+
+@media (max-width: 600px) {
+  ul li {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .items-header {
+    font-size: 1.3rem;
+  }
+
+  .edit-form h1 {
+    font-size: 1.3rem;
+  }
+
+  .new-item {
+    font-size: 1.3rem;
+  }
+
+  .main {
+    padding: 0px;
+  }
+
+  .edit-form form {
+    font-size: 1rem;
+  }
+
+  .add-form form {
+    font-size: 1rem;
+  }
+
+  form .edit-button {
+    margin-left: 0;
+  }
 }
