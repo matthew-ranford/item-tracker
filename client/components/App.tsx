@@ -2,23 +2,15 @@
 
 import ItemsList from './ItemsList'
 import AddNewItem from './AddNewItem'
+import Homepage from './Homepage'
 
 function App() {
   return (
     <>
-      <header className="header">
-        <h1>Where Is My Item?</h1>
-        {/* <li>Home</li>
-        <li>Profiles/Members</li>
-        <li>Items Lent</li>
-        <li>Memories Captured</li>
-        <h1>Log In</h1> */}
-      </header>
-
+      <Homepage />
       <section className="main">
-        {/* add your code here */}
-        <ItemsList />
-        <AddNewItem />
+        {/* <ItemsList />
+        <AddNewItem /> */}
       </section>
     </>
   )
