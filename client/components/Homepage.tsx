@@ -10,7 +10,7 @@ function Homepage() {
 
   return (
     <>
-      <header className="navigation">
+      <header className={`navigation ${menuOpen ? 'menu-open' : ''}`}>
         <a href="/" className="navigation-link">
           <div className="navigation-logo">Where Is My Item?</div>
         </a>
@@ -19,7 +19,11 @@ function Homepage() {
         </div>
         <nav className={`nav ${menuOpen ? 'show-menu' : ''}`}>
           <ul className="nav-menu">
-            <li className="nav-item">About</li>
+            <li className="nav-item">
+              <span>
+                <a href="/about">About</a>
+              </span>
+            </li>
             <li className="nav-item">
               <span>Items Lent</span>
             </li>
