@@ -1,17 +1,19 @@
-// import { Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 
-import ItemsList from './ItemsList'
-import AddNewItem from './AddNewItem'
-import Homepage from './Homepage'
+// import ItemsList from './ItemsList'
+// import AddNewItem from './AddNewItem'
+import Header from './Header'
+// import Homepage from './Homepage'
 
 function App() {
   return (
     <>
-      <Homepage />
-      <section className="main">
-        {/* <ItemsList />
+      <Header />
+      <Outlet />
+
+      {/* <Homepage /> */}
+      {/* <ItemsList />
         <AddNewItem /> */}
-      </section>
     </>
   )
 }
