@@ -10,8 +10,11 @@ function Homepage() {
             are
           </h1>
           <p className="p-left">Always misplacing your items?</p>
+
           <p className="p-left">Simpy add an item below to get started </p>
-          <button className="button-left">Add Item</button>
+          <button className="button-left">
+            The key to tracking your items
+          </button>
         </div>
         <div className="main-right">
           <h1 className="header-right">Sign Up</h1>
@@ -22,3 +25,7 @@ function Homepage() {
 }
 
 export default Homepage
+
+// TODO:
+// Add link to add item page in button
+// Maybe change navbar so the hero section goes to the top of the page and it doesnt actually show a navbar

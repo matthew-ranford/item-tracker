@@ -20,9 +20,7 @@ function Navbar() {
         <nav className={`nav ${menuOpen ? 'show-menu' : ''}`}>
           <ul className="nav-menu">
             <li className="nav-item">
-              <span>
-                <a href="/about">About</a>
-              </span>
+              <span>About</span>
             </li>
             <li className="nav-item">
               <span>Items Lent</span>
