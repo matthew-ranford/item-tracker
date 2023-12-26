@@ -27,7 +27,49 @@ function Homepage() {
           <h1 className="header-right">Sign Up</h1>
         </div>
       </section>
-      <section className="contact">
+
+      <section className="form">
+        <h2 className="form-header">Contact me!</h2>
+        <form className="contact-form" method="post">
+          <label id="name-label" htmlFor="name">
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Name.."
+              required
+            />
+          </label>
+
+          <label id="email-label" htmlFor="email">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email.."
+              required
+            />
+          </label>
+
+          <label id="comments" htmlFor="comments">
+            <br />
+            <textarea
+              id="comment"
+              name="comments"
+              rows="5"
+              cols="10"
+              placeholder="Message..."
+            ></textarea>
+          </label>
+          <button className="button-contact" type="submit">
+            <a href="mailto:matt.ranford16@gmail.com" id="email-link">
+              Send Message
+            </a>
+          </button>
+        </form>
+      </section>
+
+      <footer className="contact">
         <h2 className="contact-header">Contact</h2>
         <div className="icons">
           <i className="fa-brands fa-instagram">
@@ -46,7 +88,7 @@ function Homepage() {
             <span className="icons">LinkedIn</span>
           </i>
         </div>
-      </section>
+      </footer>
     </>
   )
 }

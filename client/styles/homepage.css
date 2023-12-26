@@ -154,6 +154,67 @@
   }
 }
 
+/* CONTACT FORM SECTION */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-header {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form {
+  margin: auto auto;
+  margin-bottom: 2rem;
+  width: 55vw;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid white;
+}
+
+#name,
+#email {
+  min-height: 2.7em;
+  margin-top: 1rem;
+  margin: auto auto;
+  width: 51%;
+  font-size: 1rem;
+  padding: 0.2rem;
+}
+
+#comments textarea {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 51%;
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0);
+}
+
+.button-contact,
+#email-link {
+  width: 50%;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-decoration: none;
+}
+
+.button-contact:hover,
+#email-link:hover {
+  color: rgb(219, 87, 25);
+  transition: 0.8s ease-out;
+  background: none;
+  font-weight: bold;
+}
+
 /* CONTACT SECTION */
 .contact {
   display: flex;
