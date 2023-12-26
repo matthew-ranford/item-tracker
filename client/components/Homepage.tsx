@@ -110,6 +110,7 @@ function Homepage() {
               placeholder="Message..."
               value={formData.comments}
               onChange={handleInputChange}
+              required
             ></textarea>
           </label>
           <button className="button-contact" type="submit">
@@ -119,23 +120,43 @@ function Homepage() {
       </section>
 
       <footer className="contact">
-        <h2 className="contact-header">Contact</h2>
         <div className="icons">
-          <i className="fa-brands fa-instagram">
-            <span className="icons">Instagram</span>
-          </i>
-          <i className="fa-solid fa-envelope">
-            <span className="icons">Email</span>
-          </i>
-          <i className="fa-solid fa-phone">
-            <span className="icons">Phone</span>
-          </i>
-          <i className="fa-brands fa-github">
-            <span className="icons">GitHub</span>
-          </i>
-          <i className="fa-brands fa-linkedin">
-            <span className="icons">LinkedIn</span>
-          </i>
+          <a
+            href="https://github.com/matthew-ranford"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-github"></i>
+          </a>
+          {/* <span className="icon">GitHub</span> */}
+          <a
+            href="https://www.linkedin.com/in/matthew-ranford-23b759261/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-linkedin"></i>
+          </a>
+          {/* <span className="icon">LinkedIn</span> */}
+          <a
+            href="mailto:matt.ranford16@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-solid fa-envelope"></i>
+          </a>
+          {/* <span className="icon">Email</span> */}
+          <a href="tel: 020-4099-4076" target="_blank" rel="noreferrer">
+            <i className="fa-solid fa-phone"></i>
+          </a>
+          {/* <span className="icon">Phone</span> */}
+          <a
+            href="https://www.instagram.com/mattranny/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-instagram"></i>
+          </a>
+          {/* <span className="icon">Instagram</span> */}
         </div>
       </footer>
     </>

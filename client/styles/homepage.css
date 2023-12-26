@@ -171,11 +171,10 @@
 .contact-form {
   margin: auto auto;
   margin-bottom: 2rem;
-  width: 55vw;
+  width: 45vw;
   font-size: 2.5rem;
   text-align: center;
   padding: 1rem;
-  border: 1px solid white;
 }
 
 #name,
@@ -215,30 +214,55 @@
   font-weight: bold;
 }
 
+@media (max-width: 1000px) {
+  .contact-form {
+    width: 95vw;
+  }
+}
+
 /* CONTACT SECTION */
 .contact {
   display: flex;
-  background-color: beige;
-  /* background-color: rgb(18, 24, 29); */
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
-  min-height: 100vh;
+  background-color: rgb(18, 134, 228);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
+  display: flex;
+  /* position: fixed; */
+  /* position: relative; */
+  /* position: sticky; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
-.contact-header {
-  text-align: center;
-  font-size: 2rem;
-  color: rgb(0, 0, 0);
+.icons i {
   margin-top: 2rem;
-  /* padding-left: 2rem;  */
-}
-
-.icons {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  /* margin: 0.5rem; */
-  padding: 1rem;
   text-align: center;
   justify-content: center;
+  cursor: pointer;
+  color: rgb(219, 87, 25);
+  font-size: 2rem;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+/* .icon {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+} */
+
+@media (max-width: 800px) {
+  .contact {
+    height: auto;
+  }
+
+  .icons i {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+  }
 }
