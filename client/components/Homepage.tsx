@@ -1,4 +1,5 @@
 import '../styles/homepage.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 import { useEffect } from 'react'
 
 function Homepage() {
@@ -26,6 +27,26 @@ function Homepage() {
           <h1 className="header-right">Sign Up</h1>
         </div>
       </section>
+      <section className="contact">
+        <h2 className="contact-header">Contact</h2>
+        <div className="icons">
+          <i className="fa-brands fa-instagram">
+            <span className="icons">Instagram</span>
+          </i>
+          <i className="fa-solid fa-envelope">
+            <span className="icons">Email</span>
+          </i>
+          <i className="fa-solid fa-phone">
+            <span className="icons">Phone</span>
+          </i>
+          <i className="fa-brands fa-github">
+            <span className="icons">GitHub</span>
+          </i>
+          <i className="fa-brands fa-linkedin">
+            <span className="icons">LinkedIn</span>
+          </i>
+        </div>
+      </section>
     </>
   )
 }
@@ -35,3 +56,4 @@ export default Homepage
 // TODO:
 // Add link to add item page in button
 // Maybe change navbar so the hero section goes to the top of the page and it doesnt actually show a navbar
+// Contact form
