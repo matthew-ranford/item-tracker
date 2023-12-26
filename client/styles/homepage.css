@@ -17,6 +17,13 @@
   background-position: center;
   background-attachment: inherit;
   position: relative;
+  overflow: hidden;
+  transform: translateX(-50%);
+  transition: transform 0.7s ease-in;
+}
+
+.slide-in {
+  transform: translateX(0);
 }
 
 .main-right {
@@ -24,7 +31,7 @@
   text-align: center;
   width: 50%;
   height: 100vh;
-  background-color: rgb(255, 255, 255);
+  background-color: bisque;
   position: relative;
   overflow: hidden;
 }
@@ -35,7 +42,7 @@
   top: 0;
   bottom: 0;
   width: 50%;
-  background-color: rgb(255, 255, 255);
+  background-color: bisque;
   transform: skewX(-25deg);
   transform-origin: bottom right;
   overflow: hidden;

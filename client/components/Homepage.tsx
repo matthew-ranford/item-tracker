@@ -1,6 +1,12 @@
 import '../styles/homepage.css'
+import { useEffect } from 'react'
 
 function Homepage() {
+  useEffect(() => {
+    const mainLeft = document.querySelector('.main-left')
+    mainLeft.classList.add('slide-in')
+  }, [])
+
   return (
     <>
       <section className="hero">
