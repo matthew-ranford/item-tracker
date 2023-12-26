@@ -6,11 +6,12 @@
   display: flex;
   flex-wrap: wrap;
   /* position: fixed; */
-  /* position: sticky; */
+  position: sticky;
+  top: 0;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
+  /* position: relative; */
   z-index: 1;
 }
 
