@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 function Homepage() {
   useEffect(() => {
     const mainLeft = document.querySelector('.main-left')
-    mainLeft.classList.add('slide-in')
+    mainLeft?.classList.add('slide-in')
   }, [])
 
   return (
@@ -17,7 +17,7 @@ function Homepage() {
           </h1>
           <p className="p-left">Always misplacing your items?</p>
 
-          <p className="p-left">Simpy add an item below to get started </p>
+          <p className="p-left">Simpy add an item to get started </p>
           <button className="button-left">
             The key to tracking your items
           </button>

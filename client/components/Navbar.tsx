@@ -29,6 +29,9 @@ function Navbar() {
               <span>Add Item</span>
             </li>
             <li className="nav-item">
+              <span>Contact</span>
+            </li>
+            <li className="nav-item">
               <span>Log In</span>
             </li>
           </ul>
