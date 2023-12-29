@@ -1,3 +1,4 @@
+// CSS styling in itemslist.css
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons'
 
@@ -11,5 +12,3 @@ function Error() {
 }
 
 export default Error
-
-// CSS styling in itemslist.css

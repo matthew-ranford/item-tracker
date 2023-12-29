@@ -63,6 +63,7 @@
   margin-right: 23rem;
   margin-top: 4rem;
   padding: 0.8rem;
+  border-radius: 2rem;
 }
 
 .button-link {
@@ -97,7 +98,7 @@
   margin-bottom: 2rem;
   transform: translateX(-30%);
   margin-top: 10%;
-  border-radius: 12%;
+  border-radius: 2rem;
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.2) 0%,
@@ -272,56 +273,5 @@
 @media (max-width: 1000px) {
   .contact-form {
     width: 95vw;
-  }
-}
-
-/* CONTACT SECTION */
-.contact {
-  display: flex;
-  flex-direction: column;
-  /* background-color: rgb(18, 134, 228); */
-  color: rgb(255, 255, 255);
-  width: 100%;
-  height: auto;
-  display: flex;
-  /* position: fixed; */
-  /* position: relative; */
-  /* position: sticky; */
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.icons i {
-  margin-top: 2rem;
-  text-align: center;
-  justify-content: center;
-  cursor: pointer;
-  color: rgb(219, 87, 25);
-  font-size: 2rem;
-  position: relative;
-  overflow: hidden;
-  padding: 2rem;
-}
-
-i:hover {
-  color: rgb(255, 255, 255);
-}
-
-/* .icon {
-  color: rgb(255, 255, 255);
-  font-weight: bolder;
-  font-size: 1.5rem;
-  padding: 1.5rem;
-} */
-
-@media (max-width: 800px) {
-  .contact {
-    height: auto;
-  }
-
-  .icons i {
-    padding: 1.5rem;
-    font-size: 1.5rem;
   }
 }

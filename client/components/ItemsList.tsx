@@ -3,11 +3,12 @@ import { getAllItems } from '../apis/apiClient'
 import { useQuery } from '@tanstack/react-query'
 import DeleteItem from './DeleteItem'
 import EditItem from './EditItem'
-import '../styles/itemslist.css'
 import Spinner from './Spinner'
 import Error from './Error'
+import '../styles/itemslist.css'
+import '../styles/footer.css'
 
-export default function ItemsList() {
+function ItemsList() {
   const {
     data: items,
     isLoading,
@@ -40,18 +41,21 @@ export default function ItemsList() {
 
   return (
     <>
-      <div className="items-list">
-        <h1 className="items-header">Current Items Lent: </h1>
-        <ul>
+      <div className="all-items">
+        <h1 className="items-header">Current Items Lent</h1>
+        <ul className="items-list">
           {items.map((item: Item) => {
             // console.log(item)
             return (
               <>
-                <li key={item.id}>
-                  {item.name} - {item.genre} - {item.description} -{' '}
-                  {item.dateLent}
+                <li className="single-item" key={item.id}>
+                  <strong className="bold">Person:</strong> {item.name} <br />
+                  <strong className="bold">Item:</strong> {item.genre} <br />
+                  <strong className="bold">Description:</strong>{' '}
+                  {item.description} <br />
+                  <strong className="bold">Date Lent:</strong> {item.dateLent}
                   <DeleteItem id={item.id} onSuccess={handleItemDelete} />
-                  <EditItem id={item.id} onSuccess={handleItemEdit} />
+                  {/* <EditItem id={item.id} onSuccess={handleItemEdit} /> */}
                 </li>
               </>
             )
@@ -61,3 +65,5 @@ export default function ItemsList() {
     </>
   )
 }
+
+export default ItemsList

@@ -1,3 +1,4 @@
+// CSS styling in itemslist.css
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 
@@ -11,5 +12,3 @@ function Spinner() {
 }
 
 export default Spinner
-
-// CSS styling in itemslist.css

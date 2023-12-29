@@ -1,0 +1,49 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(18, 134, 228); */
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
+  display: flex;
+  /* position: fixed; */
+  /* position: relative; */
+  /* position: sticky; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.icons i {
+  margin-top: 2rem;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  color: rgb(219, 87, 25);
+  font-size: 2rem;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+i:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* .icon {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+} */
+
+@media (max-width: 800px) {
+  .contact {
+    height: auto;
+  }
+
+  .icons i {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+  }
+}
