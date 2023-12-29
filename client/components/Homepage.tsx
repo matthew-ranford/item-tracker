@@ -2,7 +2,7 @@ import '../styles/homepage.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import emailjs from '@emailjs/browser'
 import { useEffect, useState } from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function Homepage() {
   const [formData, setFormData] = useState({
@@ -66,7 +66,9 @@ function Homepage() {
 
           <p className="p-left">Simpy add an item to get started </p>
           <button className="button-left">
-            The key to tracking your items
+            <Link to={'/items'} className="button-link">
+              The key to tracking your items
+            </Link>
           </button>
         </div>
         <div className="main-right">
