@@ -1,5 +1,4 @@
 /* HERO SECTION */
-
 .hero {
   display: flex;
 }
@@ -26,16 +25,6 @@
 
 .slide-in {
   transform: translateX(0);
-}
-
-.main-right {
-  flex-basis: 30%;
-  text-align: center;
-  width: 50%;
-  min-height: 100vh;
-  background-color: rgb(18, 24, 29);
-  position: relative;
-  overflow: hidden;
 }
 
 .main-left::before {
@@ -82,12 +71,48 @@
   transition: 0.8s ease-out;
 }
 
-.header-right {
-  font-size: 3rem;
-  color: rgb(0, 0, 0);
-  margin-right: 15rem;
+.main-right {
+  flex-basis: 30%;
+  min-height: 100vh;
+  background-color: rgb(18, 24, 29);
+  position: relative;
+}
+
+.signup-form {
+  margin-bottom: 2rem;
+  transform: translateX(-30%);
+  margin-top: 10%;
+  border-radius: 12%;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url('./images/signup.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 70%;
+  font-size: 2.5rem;
   text-align: center;
-  margin-top: 2rem;
+  padding: 1rem;
+  padding-top: 7rem;
+}
+
+.button-signup {
+  width: 50%;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-decoration: none;
+}
+
+.button-signup:hover {
+  color: rgb(219, 87, 25);
+  transition: 0.8s ease-out;
+  background: none;
+  font-weight: bold;
 }
 
 @media (max-width: 1100px) {
@@ -121,6 +146,19 @@
 
   .main-right {
     width: 100%;
+  }
+
+  .signup-form {
+    margin-bottom: 2rem;
+    transform: translateX(0);
+    margin: auto auto;
+    margin-top: 7rem;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 5rem;
+    height: 20rem;
+    width: 65vw;
   }
 
   .main-left::before {
@@ -159,7 +197,7 @@
   display: flex;
   flex-direction: column;
   /* background-color: rgb(18, 134, 228); */
-  background-color: rgb(0, 0, 0);
+  /* background-color: rgb(0, 0, 0); */
 }
 
 .form-header {
@@ -226,7 +264,7 @@
 .contact {
   display: flex;
   flex-direction: column;
-  background-color: rgb(18, 134, 228);
+  /* background-color: rgb(18, 134, 228); */
   color: rgb(255, 255, 255);
   width: 100%;
   height: auto;

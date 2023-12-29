@@ -69,7 +69,32 @@ function Homepage() {
           </button>
         </div>
         <div className="main-right">
-          <h1 className="header-right">Sign Up</h1>
+          <form className="signup-form">
+            <label id="name-label" htmlFor="name">
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Name.."
+                // value={formData.name}
+                // onChange={handleInputChange}
+                required
+              />
+            </label>
+
+            <label id="email-label" htmlFor="email">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Email.."
+                required
+              />
+            </label>
+            <button className="button-signup" type="submit">
+              SIGN UP
+            </button>
+          </form>
         </div>
       </section>
 
