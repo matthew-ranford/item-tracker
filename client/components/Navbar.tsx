@@ -44,7 +44,9 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <span>Add Item</span>
+              <Link to={'/items/add'} className="link">
+                <span>Add Item</span>
+              </Link>
             </li>
             <li className="nav-item">
               <span>Contact</span>
