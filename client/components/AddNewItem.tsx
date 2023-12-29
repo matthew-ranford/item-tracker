@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
-
 import { NewItem } from '../../models/items'
 import { addItem } from '../apis/apiClient'
+import '../styles/addnewitem.css'
 
 export default function AddNewItem() {
   const [name, setName] = useState('')
@@ -37,49 +37,60 @@ export default function AddNewItem() {
   }
 
   return (
-    <div className="add-form">
-      <h2 className="new-item">Add New Item: </h2>
-      <form onSubmit={handleAddSubmit} aria-label="Add New Item">
-        {/* <label htmlFor="name">Name: </label> */}
-        Name:
-        <input
-          aria-label="name"
-          type="text"
-          value={name}
-          required
-          onChange={(e) => setName(e.target.value)}
-        />
-        {/* <label htmlFor="genre">Genre: </label> */}
-        Genre:
-        <input
-          aria-label="genre"
-          type="text"
-          value={genre}
-          required
-          onChange={(e) => setGenre(e.target.value)}
-        />
-        {/* <label htmlFor="description">Description: </label> */}
-        Description:
-        <input
-          aria-label="description"
-          type="text"
-          value={description}
-          required
-          onChange={(e) => setDescription(e.target.value)}
-        />
-        {/* <label htmlFor="dateLent">Date Lent: </label> */}
-        Date Lent:
-        <input
-          aria-label="dateLent"
-          type="text"
-          value={dateLent}
-          required
-          onChange={(e) => setDateLent(e.target.value)}
-        />
+    <>
+      <h2 className="new-item-header">Add New Item: </h2>
+      <div className="add-items">
+        <form
+          className="add-form"
+          onSubmit={handleAddSubmit}
+          aria-label="Add New Item"
+        >
+          {/* <label htmlFor="name">Name: </label> */}
+          <input
+            id="name"
+            placeholder="Name.."
+            aria-label="name"
+            type="text"
+            value={name}
+            required
+            onChange={(e) => setName(e.target.value)}
+          />
+          {/* <label htmlFor="genre">Genre: </label> */}
+          <input
+            id="genre"
+            placeholder="Genre.."
+            aria-label="genre"
+            type="text"
+            value={genre}
+            required
+            onChange={(e) => setGenre(e.target.value)}
+          />
+          {/* <label htmlFor="description">Description: </label> */}
+          <input
+            id="description"
+            placeholder="Description.."
+            aria-label="description"
+            type="text"
+            value={description}
+            required
+            onChange={(e) => setDescription(e.target.value)}
+          />
+          {/* <label htmlFor="dateLent">Date Lent: </label> */}
+
+          <input
+            id="datelent"
+            placeholder="Date Lent.."
+            aria-label="dateLent"
+            type="text"
+            value={dateLent}
+            required
+            onChange={(e) => setDateLent(e.target.value)}
+          />
+        </form>
         <button className="add-button" type="submit">
           Add New Item
         </button>
-      </form>
-    </div>
+      </div>
+    </>
   )
 }
