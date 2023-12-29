@@ -60,9 +60,9 @@
 .button-left {
   cursor: pointer;
   font-size: 1.5rem;
-  margin-right: 30rem;
+  margin-right: 23rem;
   margin-top: 4rem;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 
 .button-left:hover {

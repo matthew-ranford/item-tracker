@@ -76,8 +76,6 @@ function Homepage() {
                 name="name"
                 type="text"
                 placeholder="Name.."
-                // value={formData.name}
-                // onChange={handleInputChange}
                 required
               />
             </label>

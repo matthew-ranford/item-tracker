@@ -1,8 +1,23 @@
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import '../styles/navbar.css'
 import { useState } from 'react'
+import { IfAuthenticated, IfNotAuthenticated } from './Signup'
+import { useAuth0 } from '@auth0/auth0-react'
 
 function Navbar() {
+  const authenticate = useAuth0()
+  const user = authenticate.user
+
+  const handleSignOut = () => {
+    authenticate.logout()
+    console.log('sign out')
+  }
+
+  const handleSignIn = () => {
+    authenticate.loginWithRedirect()
+    console.log('sign in')
+  }
+
   const [menuOpen, setMenuOpen] = useState(false)
   const menuToggle = () => {
     setMenuOpen(!menuOpen)
@@ -32,7 +47,16 @@ function Navbar() {
               <span>Contact</span>
             </li>
             <li className="nav-item">
-              <span>Log In</span>
+              <IfNotAuthenticated>
+                <span onClick={handleSignIn}>Log In</span>
+              </IfNotAuthenticated>
+              <IfAuthenticated>
+                {user && (
+                  <p className="signed-in" onClick={handleSignOut}>
+                    Sign out: {user?.name}
+                  </p>
+                )}
+              </IfAuthenticated>
             </li>
           </ul>
         </nav>

@@ -108,7 +108,12 @@
   z-index: 1;
 }
 
-@media (max-width: 1000px) {
+.signed-in {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 1150px) {
   .navigation {
     height: auto;
   }
