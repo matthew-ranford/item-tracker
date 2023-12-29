@@ -1,0 +1,76 @@
+.data {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.spinner {
+  font-size: 8rem;
+  text-align: center;
+  margin-top: 10%;
+  color: rgb(54, 158, 23);
+}
+
+.error {
+  font-size: 8rem;
+  text-align: center;
+  margin-top: 10%;
+  color: rgb(155, 8, 8);
+}
+
+.items-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.items-header {
+  font-size: 1.8rem;
+}
+
+/* FOR ITEMS LIST / ADD NEW ITEM COMPONENTS */
+
+/* ul li {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+} */
+
+.delete-button {
+  margin-top: 0.2rem;
+  /* margin-left: 10rem; */
+  padding: 0.5rem;
+  max-width: 200px;
+}
+
+.edit-button {
+  margin-top: 0.3rem;
+  margin-left: 7rem;
+  max-width: 50px;
+  padding: 0.5rem;
+}
+
+.edit-form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.new-item {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.add-form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: auto auto;
+  font-size: 1.2rem;
+}
+
+input {
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+}

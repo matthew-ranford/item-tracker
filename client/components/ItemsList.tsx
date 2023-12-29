@@ -3,6 +3,9 @@ import { getAllItems } from '../apis/apiClient'
 import { useQuery } from '@tanstack/react-query'
 import DeleteItem from './DeleteItem'
 import EditItem from './EditItem'
+import '../styles/itemslist.css'
+import Spinner from './Spinner'
+import Error from './Error'
 
 export default function ItemsList() {
   const {
@@ -20,11 +23,11 @@ export default function ItemsList() {
   // Data now displaying in insomnia and rendering on home page
 
   if (isError) {
-    return <p>Im currently an error...</p>
+    return <Error />
   }
 
   if (!items || isLoading) {
-    return <p>Im trying to load the data...</p>
+    return <Spinner />
   }
 
   const handleItemDelete = async () => {
