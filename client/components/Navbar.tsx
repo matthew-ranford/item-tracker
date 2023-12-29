@@ -3,6 +3,7 @@ import '../styles/navbar.css'
 import { useState } from 'react'
 import { IfAuthenticated, IfNotAuthenticated } from './Signup'
 import { useAuth0 } from '@auth0/auth0-react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   const authenticate = useAuth0()
@@ -38,7 +39,9 @@ function Navbar() {
               <span>About</span>
             </li>
             <li className="nav-item">
-              <span>Items Lent</span>
+              <Link to={'/items'} className="link">
+                <span>Items Lent</span>
+              </Link>
             </li>
             <li className="nav-item">
               <span>Add Item</span>

@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom'
 
-// import ItemsList from './ItemsList'
 // import AddNewItem from './AddNewItem'
 import Header from './Header'
 // import Homepage from './Homepage'
@@ -12,8 +11,7 @@ function App() {
       <Outlet />
 
       {/* <Homepage /> */}
-      {/* <ItemsList />
-        <AddNewItem /> */}
+      {/* // <AddNewItem /> } */}
     </>
   )
 }
