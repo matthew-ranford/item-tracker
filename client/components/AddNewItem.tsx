@@ -38,7 +38,7 @@ export default function AddNewItem() {
 
   return (
     <>
-      <h2 className="new-item-header">Add New Item: </h2>
+      <h2 className="new-item-header">Add New Item</h2>
       <div className="add-items">
         <form
           className="add-form"
