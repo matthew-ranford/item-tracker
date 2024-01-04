@@ -111,6 +111,7 @@
 }
 
 .hamburger-menu {
+  color: rgb(219, 87, 25);
   cursor: pointer;
   display: none;
   font-size: 2rem;

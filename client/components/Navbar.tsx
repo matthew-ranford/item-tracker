@@ -24,6 +24,10 @@ function Navbar() {
     setMenuOpen(!menuOpen)
   }
 
+  const closeMenu = () => {
+    setMenuOpen(false)
+  }
+
   return (
     <>
       <header className={`navigation ${menuOpen ? 'menu-open' : ''}`}>
@@ -35,23 +39,23 @@ function Navbar() {
         </div>
         <nav className={`nav ${menuOpen ? 'show-menu' : ''}`}>
           <ul className="nav-menu">
-            <li className="nav-item">
+            <li className="nav-item" onClick={closeMenu}>
               <span>About</span>
             </li>
             <li className="nav-item">
-              <Link to={'/items'} className="link">
+              <Link to={'/items'} className="link" onClick={closeMenu}>
                 <span>Items Lent</span>
               </Link>
             </li>
             <li className="nav-item">
-              <Link to={'/items/add'} className="link">
+              <Link to={'/items/add'} className="link" onClick={closeMenu}>
                 <span>Add Item</span>
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={closeMenu}>
               <span>Contact</span>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={closeMenu}>
               <IfNotAuthenticated>
                 <span onClick={handleSignIn}>Log In</span>
               </IfNotAuthenticated>
