@@ -39,9 +39,13 @@ function Navbar() {
         </div>
         <nav className={`nav ${menuOpen ? 'show-menu' : ''}`}>
           <ul className="nav-menu">
-            <li className="nav-item" onClick={closeMenu}>
-              <span>About</span>
-            </li>
+            {/* <li className="nav-item" onClick={closeMenu}>
+              <span>
+                <a href="#about" className="link">
+                  About
+                </a>
+              </span>
+            </li> */}
             <li className="nav-item">
               <Link to={'/items'} className="link" onClick={closeMenu}>
                 <span>Items Lent</span>
@@ -52,9 +56,11 @@ function Navbar() {
                 <span>Add Item</span>
               </Link>
             </li>
-            <li className="nav-item" onClick={closeMenu}>
-              <span>Contact</span>
-            </li>
+            {/* <li className="nav-item" onClick={closeMenu}>
+              <a href="#contact" className="link">
+                <span>Contact</span>
+              </a>
+            </li> */}
             <li className="nav-item" onClick={closeMenu}>
               <IfNotAuthenticated>
                 <span onClick={handleSignIn}>Log In</span>

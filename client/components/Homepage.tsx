@@ -57,7 +57,7 @@ function Homepage() {
 
   return (
     <>
-      <section className="hero">
+      <section className="hero" id="about">
         <div className="main-left">
           <h1 className="header-left">
             Keep track of the items you've lent so you always know where they
@@ -100,7 +100,7 @@ function Homepage() {
         </div>
       </section>
 
-      <section className="form">
+      <section className="form" id="contact">
         <h2 className="form-header">Contact me!</h2>
         <form className="contact-form" onSubmit={handleEmailSubmit}>
           <label id="name-label" htmlFor="name">
@@ -151,6 +151,4 @@ function Homepage() {
 export default Homepage
 
 // TODO:
-// Add link to add item page in button
-// Maybe change navbar so the hero section goes to the top of the page and it doesnt actually show a navbar
-// Contact form
+// Link to About, Contact, Log in sections (Need to remove navbar links when on a different component)
