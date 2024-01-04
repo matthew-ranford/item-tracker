@@ -73,6 +73,26 @@
   transition: 0.8s ease-out;
 }
 
+@media (max-width: 700px) {
+  .all-items {
+    max-width: 80vw;
+    margin: auto auto;
+  }
+
+  .items-header {
+    font-size: 1.8rem;
+  }
+
+  .items-list {
+    font-size: 1.3rem;
+  }
+
+  .delete-button {
+    font-size: 1.2rem;
+    margin-left: 37%;
+  }
+}
+
 /* .edit-button {
   margin-top: 0.3rem;
   margin-left: 7rem;

@@ -38,18 +38,22 @@
 
 .add-button {
   cursor: pointer;
-  /* margin-top: 1rem; */
+  /* margin-top: 2rem; */
   /* margin-bottom: 1.5rem; */
   font-size: 1.5rem;
   padding: 0.5rem;
   border-radius: 2rem;
-  width: 15%;
+  width: 50%;
   margin: auto auto;
+  margin-top: 1rem;
+  border: none;
+  background: none;
+  color: rgb(255, 255, 255);
 }
 
 .add-button:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(219, 87, 25);
+  color: rgb(219, 87, 25);
+  background: none;
   transition: 0.8s ease-out;
 }
 
@@ -61,37 +65,8 @@
   color: white;
 } */
 
-@media (max-width: 600px) {
-  ul li {
-    margin-right: 1rem;
-    font-size: 1rem;
-  }
-
-  .items-header {
-    font-size: 1.3rem;
-  }
-
-  .edit-form h1 {
-    font-size: 1.3rem;
-  }
-
-  .new-item {
-    font-size: 1.3rem;
-  }
-
-  .main {
-    padding: 0px;
-  }
-
-  .edit-form form {
-    font-size: 1rem;
-  }
-
-  .add-form form {
-    font-size: 1rem;
-  }
-
-  form .edit-button {
-    margin-left: 0;
+@media (max-width: 1000px) {
+  .add-form {
+    width: 95vw;
   }
 }

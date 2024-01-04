@@ -27,6 +27,7 @@ export default function AddNewItem() {
       description: description,
       dateLent: dateLent,
     } as NewItem)
+
     // console.log('submitting')
 
     // Once add new item button has been clicked, set the state back to an empty input field
@@ -86,10 +87,10 @@ export default function AddNewItem() {
             required
             onChange={(e) => setDateLent(e.target.value)}
           />
+          <button className="add-button" type="submit">
+            Add New Item
+          </button>
         </form>
-        <button className="add-button" type="submit">
-          Add New Item
-        </button>
       </div>
     </>
   )
